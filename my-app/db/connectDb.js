@@ -3,7 +3,7 @@ import mongoose from "mongoose";
 
 const connectDb = async () => {
         try {
-            const conn = await mongoose.connect("mongodb://localhost:27017/beer", {
+            const conn = await mongoose.connect("mongodb+srv://singhaniayuvraj11:s2osOWc0p4P4OyXx@getmeabeer.z97jkov.mongodb.net/beer?retryWrites=true&w=majority&appName=getmeabeer", {
                 useNewUrlParser: true,
             });
             console.log(`MongoDB Connected: ${conn.connection.host}`);
