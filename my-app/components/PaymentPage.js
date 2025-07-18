@@ -137,8 +137,7 @@ const PaymentPage = ({ username }) => {
                         alt="user"
                         className="w-10 h-10 border-2 border-black rounded-full"
                       />
-                      {p.name} donated rs {p.amount / 100} with a msg "
-                      {p.message}"
+                      {p.name} donated rs {p.amount / 100} with a msg {`"${p.message}"`}
                     </li>
                   );
                 }
