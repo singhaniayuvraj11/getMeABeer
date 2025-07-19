@@ -24,14 +24,15 @@ const PaymentPage = ({ username }) => {
   const router = useRouter();
 
   useEffect(() => {
-      console.log(session);
-  
-      if (!session) {
-        router.push("/login");
-      } else {
-        getData();
-      }
-    }, []);
+  console.log(session);
+
+  if (!session) {
+    router.push("/login");
+  } else {
+    getData();
+  }
+}, [session, router, getData]); // Include dependencies
+
 
   useEffect(() => {
     getData();

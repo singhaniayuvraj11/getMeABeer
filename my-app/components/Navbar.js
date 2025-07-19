@@ -13,7 +13,7 @@ const Navbar = () => {
   //   </>
   // }
   return (
-    <nav className="bg-gray-900 text-white flex justify-between px-4 md:h-16 items-center flex-col md:flex-row ">
+    <nav className="bg-gray-900 text-white flex justify-between px-4 md:h-16 items-center ">
       <Link href={"/"}>
         <div className="logo font-bold text-bold md:text-lg flex items-center justify-center">
           <span>
