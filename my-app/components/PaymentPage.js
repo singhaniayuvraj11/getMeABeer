@@ -31,7 +31,7 @@ const PaymentPage = ({ username }) => {
   } else {
     getData();
   }
-}, [session, router, getData]); // Include dependencies
+}, [session, router,]); // Include dependencies
 
 
   useEffect(() => {
